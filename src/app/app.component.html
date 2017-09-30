@@ -5,6 +5,7 @@
   </h1>
 </div>
 
-<div *appNgLoop>Foo</div>
-
-<!-- <div *ngFor="let nr of numbers">{{ nr }}</div> -->
+<div *appNgLoop="let nr of numbers; index as i">
+  {{ nr }} - Foo
+  Index: {{ i }}
+</div>
